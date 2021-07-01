@@ -1,12 +1,12 @@
-$(()=>{
+var div = document.getElementById('div'); // Seleciona elemento HTML com JS
+//var div = $('div'); // Seleciona elemento HTML com jQuery
+$('div').html("Novo texto"); // Aplica funcoes do jQuery no elemento selecionado 
+//$(document.getElementById('div')).html('Novo em folha'); // pode ser feito desta maneira tbm
 
-    //$('#teste').text('Agora isto é um texto'); // Altera elemento HTML e adc texto
-    $('#teste').find('img').width(200);
-    $('input').val('Teste'); // Altera o value do elemento
-    $('input').before('<div>Adiciona conteudo antes do elemento</div>');
-    $('input').after('<br><img src="http://www.google.com.br/google.jpg">'); // Adiciona conteudo apos o elemento    
-    $('ul').prepend("<li>Item 0</li>"); // Adiciona conteudo ao HTML sem apagar o anterior - antes
-    $('ul').append("<li>Item 5</li>"); // Adiciona conteudo ao HTML sem apagar o anterior - depois
-    $('input').remove(); // Remove elemento HTML
 
-});
+/* Duas maneiras de selecionar o 2º item da lista
+$('li:eq(1)')
+$('li').eq(1) */
+
+var segundoItem = $('li').eq(1);
+segundoItem.html("Item segundo");
