@@ -1,2 +1,4 @@
-//$(document).ready(()=> alert("Opa, tudo bem?"));
-$(()=> alert("Opa, tudo bem?"));
+/*var $j = jQuery.noConflict();
+$j(document).ready(()=> (alert("Está funcionando...")));*/
+
+jQuery(document).ready(()=> (alert("Funcionando nativamente...")));
