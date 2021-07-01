@@ -1,12 +1,15 @@
-var div = document.getElementById('div'); // Seleciona elemento HTML com JS
-//var div = $('div'); // Seleciona elemento HTML com jQuery
-$('div').html("Novo texto"); // Aplica funcoes do jQuery no elemento selecionado 
-//$(document.getElementById('div')).html('Novo em folha'); // pode ser feito desta maneira tbm
+$(()=>{
 
+    /* Formas de selecionar a class .filha
+    $('.filha');
+    $('.site').find('.filha');
+    $('.site').find('.topo').find('.filha'); */
 
-/* Duas maneiras de selecionar o 2º item da lista
-$('li:eq(1)')
-$('li').eq(1) */
+    //$('.filha').parent() // Seleciona o elemento HTML que esta antes da class .filha = .subtopo
 
-var segundoItem = $('li').eq(1);
-segundoItem.html("Item segundo");
+    //$('.irmao').closest('.topo'); // Acha o elemento que estiver mais perto e que tenha a classe .topo
+
+     //$('.irmao').closest('.site').find('.conteudo'); // Retorna para a div que engloba todo o site para selecionar a div que estiver fora do contexto da primeira selecionada
+
+     // OBS: Preferir usar closest
+});
