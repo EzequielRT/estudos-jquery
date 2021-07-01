@@ -1,4 +1,12 @@
-// $('.botao') -> Seleciona pela classe do elemento
-// $('#botao1') -> Seleciona pelo id do elemento,
-// $('li.botao') -> Seleciona a tag li que tiver a classe botao
-// $('.lista2 li.botao') -> Seleciona a tag li que tiver dentro da classe .lista2 e tiver a classe botao
+$(()=>{
+
+    // Setando atritubutos
+    $('a').attr('href', 'http://google.com.br'); 
+    $('img').attr('width', '200');
+    $('img').attr('border', '5');
+
+    // Retorna o valor que esta setado no elemento
+    console.log($('img').attr('border')); // = 5
+
+});
+
