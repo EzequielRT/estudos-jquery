@@ -7,5 +7,6 @@ $(()=>{
     $('input').after('<br><img src="http://www.google.com.br/google.jpg">'); // Adiciona conteudo apos o elemento    
     $('ul').prepend("<li>Item 0</li>"); // Adiciona conteudo ao HTML sem apagar o anterior - antes
     $('ul').append("<li>Item 5</li>"); // Adiciona conteudo ao HTML sem apagar o anterior - depois
+    $('input').remove(); // Remove elemento HTML
 
 });
