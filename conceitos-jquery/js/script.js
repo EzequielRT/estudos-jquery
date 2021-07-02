@@ -1,8 +1,8 @@
 $(()=>{
 
-    $('h1').css('color', '#00F');
-    $('h1').css('font-size', '15px');
-
-    $('button').css('border', '1px solid #000').css('background-color', '#F00').css('color', '#FFF');
+    $('input').attr('data-idade', 90); // Armazena dado no elemento HTML
+    $('input').data('idade', 85) // Armazena dado na memoria do jQuery
+    
+    $('input').data('caracteres', $('input').val().length); // Salva a qtd de caracteres que tem na string
 
 });
