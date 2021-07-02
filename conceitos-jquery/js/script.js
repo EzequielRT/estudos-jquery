@@ -1,10 +1,8 @@
 $(()=>{
-    $('h1').addClass('fundovermelho'); // Adiciona class
-    //$('h1').removeClass('fundovermelho'); // Remove class
 
-    if( $('h1').hasClass('fundovermelho') ) { // Verifica se a tag possui a classe, retorna true ou false
-        alert("Tem sim");
-    } else { 
-        alert("Tem não");
-    }
+    $('h1').css('color', '#00F');
+    $('h1').css('font-size', '15px');
+
+    $('button').css('border', '1px solid #000').css('background-color', '#F00').css('color', '#FFF');
+
 });
