@@ -1,5 +1,5 @@
-var num = 5;
+$('#nome').attr('disabled', 'disabled');
+$('#nome').removeAttr('disabled', 'disabled');
 
-$.isNumeric(num); // Retorna se a variavel é um numero = true/false
-$.isArray(num); // Retorna se a variavel é um array = true/false
-$.isFunction(num); // Retorna se a variavel é uma funcao = true/false
+$('#salvo').attr('checked', 'checked');
+$('#salvo').removeAttr('checked', 'checked');
