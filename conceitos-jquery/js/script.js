@@ -1,1 +1,1 @@
-$('#idade').val();
+$('li').eq(2)[0].innerHTML = "Alguma coisa"; // Pegando objeto nativamente
