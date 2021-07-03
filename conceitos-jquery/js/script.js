@@ -1,8 +1,7 @@
 $(function () {
     
-    $('#div').bind('scroll', function(){
-        console.log("Scrollou!");
-        $(this).css('background-color', 'green');
+    $(window).bind('resize', function(){
+        console.log("Mudou o tamanho da tela!");
     });
 
 });
