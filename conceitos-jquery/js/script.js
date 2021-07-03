@@ -1,13 +1,17 @@
-$(function() {
-    
-    // Adiciona evento de clique
+$(function () {
+
+    // Adicionando varios eventos ao mesmo elemento
     $('button').bind('click',
-        function() { $(this).toggleClass('fundovermelho') } 
-    );
+        function () {
+            alert("Clicou!");
+    });
 
-    // Remove evento de clique
-    //$('button').unbind('click');
+    $('button').bind('mouseover', function () {
+        $(this).addClass('fundovermelho');
+    });
 
-    $('button').off('click');
+    $('button').bind('mouseout', function () {
+        $(this).removeClass('fundovermelho');
+    });
 
 });
