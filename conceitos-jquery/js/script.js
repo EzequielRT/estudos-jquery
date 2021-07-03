@@ -1,17 +1,12 @@
 $(function () {
 
-    // Adicionando varios eventos ao mesmo elemento
-    $('button').bind('click',
-        function () {
-            alert("Clicou!");
+    // 
+    $('#btn1').bind('click', function () {
+        $('#btn2').trigger('click');
     });
 
-    $('button').bind('mouseover', function () {
-        $(this).addClass('fundovermelho');
-    });
-
-    $('button').bind('mouseout', function () {
-        $(this).removeClass('fundovermelho');
+    $('#btn2').bind('click', function () {
+        alert("Clicou no botão 2");
     });
 
 });
