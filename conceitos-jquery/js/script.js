@@ -1,12 +1,15 @@
+function eventoDoBotao(e) {
+    e.preventDefault();
+    alert(e.type);
+}
+
 $(function () {
-
-    // 
-    $('#btn1').bind('click', function () {
-        $('#btn2').trigger('click');
-    });
-
-    $('#btn2').bind('click', function () {
-        alert("Clicou no botão 2");
+    
+    $('#botao').bind('click', eventoDoBotao); 
+    $('#botao').bind('click', function(){
+        var txt = $('#nome').val();
+        alert(txt);       
+        $('#botao').bind('mouseout', eventoDoBotao);
     });
 
 });
