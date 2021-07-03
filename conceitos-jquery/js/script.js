@@ -6,6 +6,8 @@ $(function() {
     );
 
     // Remove evento de clique
-    $('button').unbind('click');
+    //$('button').unbind('click');
+
+    $('button').off('click');
 
 });
