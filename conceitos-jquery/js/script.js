@@ -5,11 +5,7 @@ $(function() {
         function() { $(this).toggleClass('fundovermelho') } 
     );
 
-    /*
-    // Adiciona evento de clique
-    $('button').on('click',
-        function() { $(this).toggleClass('fundovermelho') } 
-    );
-    */
+    // Remove evento de clique
+    $('button').unbind('click');
 
 });
