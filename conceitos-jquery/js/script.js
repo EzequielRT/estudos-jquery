@@ -1,11 +1,12 @@
 $(function () {
     
-    $('#nome').bind('keydown', function(){
-        console.log("Uma tecla foi apertada!");
-    });
-
-    $('#nome').bind('keyup', function(){
-        console.log("Uma tecla foi soltada!");
+    $('#nome').bind('keyup', function(e){
+        
+        if(e.keyCode == 13) {
+            var txt = $(this).val();
+            console.log(txt);
+            $(this).val('');
+        }
     });
 
 });
