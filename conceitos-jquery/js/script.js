@@ -1,7 +1,11 @@
 $(function () {
     
-    $('#idade').bind('change', function(){
-        console.log($(this).val());
+    $('#nome').bind('keydown', function(){
+        console.log("Uma tecla foi apertada!");
+    });
+
+    $('#nome').bind('keyup', function(){
+        console.log("Uma tecla foi soltada!");
     });
 
 });
