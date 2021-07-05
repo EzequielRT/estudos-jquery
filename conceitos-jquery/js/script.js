@@ -1,12 +1,11 @@
 $(function () {
     
-    $('#nome').bind('keyup', function(e){
-        
-        if(e.keyCode == 13) {
-            var txt = $(this).val();
-            console.log(txt);
-            $(this).val('');
-        }
+    $('.botao').bind('mousedown', function (){
+        console.log("Apertou o mouse.")
+    });
+
+    $('.botao').bind('mouseup', function (){
+        console.log("Soltou o mouse.")
     });
 
 });
