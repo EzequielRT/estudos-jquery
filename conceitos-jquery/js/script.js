@@ -1,15 +1,9 @@
 $(function () {
     
-    $('#btn1').bind('click', function(){
-        $('.div').animate({
-            'margin-left':"+=50px"
-        }, 500);
-    });
+    $('button').click(function(){
 
-    $('#btn2').bind('click', function(){
-        $('.div').animate({
-            'margin-left':"-=50px"
-        }, 500);
+        $('.div').load("teste.html");
+
     });
 
 });
