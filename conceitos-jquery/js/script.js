@@ -2,12 +2,14 @@ $(function () {
     
     $('#btn1').bind('click', function(){
         $('.div').animate({
-            'margin-left':'500px'
-        }, 2000);
+            'margin-left':"+=50px"
+        }, 500);
     });
 
     $('#btn2').bind('click', function(){
-        $('.div').stop();
+        $('.div').animate({
+            'margin-left':"-=50px"
+        }, 500);
     });
 
 });
