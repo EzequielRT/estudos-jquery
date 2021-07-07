@@ -6,7 +6,18 @@ $(function () {
             'margin-top':'20px',
             'width':'500px',
             'border-radius':'75px'
-        }, 1000);
+        }, {
+            duration:1500,
+            start:function(){
+                console.log("Animação começou!");
+            },
+            complete:function(){
+                console.log("Animação finalizada!");
+            },
+            step:function(){
+                console.log("Nova etapa...");
+            }
+        });
     });
 
 });
