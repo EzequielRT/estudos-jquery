@@ -2,7 +2,9 @@ $(function () {
     
     $('button').click(function(){
 
-        $('.div').load("teste.html");
+        $.get("teste.html", function (txt){
+            $('.div').html(txt);
+        });
 
     });
 
