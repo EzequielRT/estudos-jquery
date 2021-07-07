@@ -1,11 +1,10 @@
 $(function () {
     
-    $('button').click(function(){
-
-        $.post("teste.html", function (txt){
-            $('.div').html(txt);
-        });
-
+    $('#form').bind('submit', function(e){
+        e.preventDefault();
+        
+        var txt = $(this).serialize(); // Formata os dados para envio
+        console.log(txt);
     });
 
 });
