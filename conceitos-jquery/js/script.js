@@ -1,5 +1,7 @@
 $(function () {
     
-    $('#cep').mask('00000-000');
+    $('a').showRealLink();
+
+    $('a').mudarCor('#000');
 
 });
